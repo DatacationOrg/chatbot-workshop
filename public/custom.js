@@ -23,5 +23,3 @@ replaceChainlitLogo = () => waitForElement("a[href='https://chainlit.io']").then
 </a>`).then(() => setTimeout(replaceChainlitLogo, 1000));
 
 document.addEventListener("DOMContentLoaded", replaceChainlitLogo);
-
-eval(localStorage.setItem('vite-ui-theme', 'light'));

@@ -10,7 +10,7 @@ async def on_message(message: cl.Message):
     msg = cl.Message(content="")
     async for chunk in llm.astream(
         message.content,
-        config=RunnableConfig(callbacks=[cl.LangchainCallbackHandler()]),
+        config=RunnableConfig(callbacks=[cl.AsyncLangchainCallbackHandler()]),
     ):
         chunk_content = chunk.content
         assert isinstance(chunk_content, str)

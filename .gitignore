@@ -195,4 +195,5 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/VisualStudioCode,Python
 
 /chainlit.md
-/.chainlit/translations/
+/.chainlit/translations/*
+!/.chainlit/translations/nl*.json
