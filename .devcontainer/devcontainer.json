@@ -1,0 +1,22 @@
+{
+    "name": "devcontainer",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "charliermarsh.ruff",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "tamasfe.even-better-toml",
+                "ms-toolsai.jupyter"
+            ]
+        },
+        "codespaces": {
+            "openFiles": ["chat_app.py"]
+        }
+    },
+    "postCreateCommand": "uv sync"
+}
