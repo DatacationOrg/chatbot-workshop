@@ -198,3 +198,4 @@ pyrightconfig.json
 /app.py
 /chainlit.md
 /.chainlit/
+/uv.lock
