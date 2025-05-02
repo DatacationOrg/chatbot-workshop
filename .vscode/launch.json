@@ -8,12 +8,7 @@
             "name": "Python Debugger: chat_app.py",
             "type": "debugpy",
             "request": "launch",
-            "module": "chainlit",
-            "args": [
-                "run",
-                "-w",
-                "${workspaceFolder}/chat_app.py"
-            ]
+            "program": "${workspaceFolder}/chat_app.py",
         },
     ]
 }
